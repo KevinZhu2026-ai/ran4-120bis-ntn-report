@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAN4#120-bis 济州岛会议 NTN 相关议题报告</title>
+<style>
+:root{
+  --ink:#1a2332; --muted:#5b6b7f; --line:#dde5ee;
+  --accent:#0b57d0; --accent-dark:#083a86;
+  --ok-bg:#e6f4ea; --ok-ink:#137333;
+  --ffs-bg:#fef3e2; --ffs-ink:#b06000;
+  --card:#ffffff; --bg:#f4f7fb;
+  --tddoc-bg:#e8f0fe; --tddoc-ink:#174ea6;
+  --wad-bg:#f0f6ff; --wad-edge:#4285f4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;font-size:15px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  padding:10px 22px;display:flex;gap:14px;align-items:center;overflow-x:auto;white-space:nowrap}
+.topbar b{color:var(--accent);font-size:14px;flex:none}
+.topbar a{color:var(--muted);text-decoration:none;font-size:13px;padding:3px 8px;border-radius:6px;flex:none}
+.topbar a:hover{background:var(--tddoc-bg);color:var(--accent-dark)}
+main{max-width:1150px;margin:0 auto;padding:26px 34px 90px}
+main h1{display:none}
+.hero{background:linear-gradient(135deg,#083a86,#0b57d0 55%,#1a73e8);color:#fff;
+  border-radius:14px;padding:26px 30px;margin-bottom:22px;box-shadow:0 6px 24px rgba(11,87,208,.25)}
+.hero-kicker{font-size:12.5px;letter-spacing:.4px;opacity:.85;margin-bottom:8px}
+.hero h1{font-size:24px;line-height:1.35;margin-bottom:6px}
+.hero-sub{font-size:13px;opacity:.9}
+.stats{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+  border-radius:10px;padding:8px 16px;text-align:center;min-width:96px}
+.stat b{display:block;font-size:22px}
+.stat span{font-size:11.5px;opacity:.85}
+h2{font-size:20px;color:var(--accent-dark);margin:34px 0 12px;padding:8px 14px;
+  background:linear-gradient(90deg,var(--tddoc-bg),transparent);border-left:5px solid var(--accent);border-radius:0 8px 8px 0}
+h3{font-size:16.5px;color:var(--accent-dark);margin:24px 0 8px}
+h4{font-size:14.5px;color:var(--muted);margin:16px 0 6px}
+p{margin:8px 0}
+ul,ol{padding-left:22px;margin:8px 0}
+li{margin:4px 0}
+strong{color:var(--accent-dark)}
+blockquote{border-left:4px solid var(--accent);background:var(--tddoc-bg);
+  padding:10px 16px;margin:12px 0;border-radius:0 8px 8px 0;color:#2a3a55}
+blockquote p{margin:4px 0}
+hr{border:none;border-top:1px dashed var(--line);margin:26px 0}
+code{background:#eef1f5;color:#c7254e;padding:1px 5px;border-radius:4px;font-size:.92em;
+  font-family:"SF Mono",Menlo,Consolas,monospace}
+code.tdoc{background:var(--tddoc-bg);color:var(--tddoc-ink);font-weight:600}
+.b-ok{display:inline-block;background:var(--ok-bg);color:var(--ok-ink);font-weight:700;
+  border-radius:10px;padding:0 8px;font-size:12.5px;margin-right:2px}
+.b-ffs{display:inline-block;background:var(--ffs-bg);color:var(--ffs-ink);font-weight:700;
+  border-radius:10px;padding:0 7px;font-size:11.5px;margin:0 1px;vertical-align:1px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px;background:var(--card);
+  border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(20,40,80,.08)}
+th{background:linear-gradient(180deg,#123c8c,#0b57d0);color:#fff;padding:7px 10px;text-align:left;font-weight:600;white-space:nowrap}
+td{border-bottom:1px solid var(--line);padding:7px 10px;vertical-align:top}
+tr:nth-child(even) td{background:#f8fafd}
+tr:last-child td{border-bottom:none}
+table.wad td:last-child{background:var(--wad-bg);border-left:3px solid var(--wad-edge);font-weight:500}
+table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
+.foot{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:12.5px}
+@media (max-width:760px){
+  main{padding:16px}
+  .hero{padding:18px}
+  table{font-size:12px}
+  th,td{padding:5px 7px}
+}
+@media print{
+  .topbar{display:none}
+  body{background:#fff;font-size:11pt}
+  main{max-width:none;padding:0}
+  .hero{border-radius:0;box-shadow:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  h2{break-after:avoid}
+  table{break-inside:auto}
+  tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<nav class="topbar"><b>RAN4#120-bis</b><a href="#0-会议信息与数据源">0. 会议信息与数据源</a>
+<a href="#1-ntn-议题全景-议程-wi-结论载体">1. NTN 议题全景（议程 × WI × 结论载体）</a>
+<a href="#2-逐议题进展详析">2. 逐议题进展详析</a>
+<a href="#3-公司态势与争议焦点">3. 公司态势与争议焦点</a>
+<a href="#4-下步关注与建议-面向-ran4-121-2026-11-16-20-calgary">4. 下步关注与建议（面向 RAN4#121，2026-11-16~20 Calgary）</a>
+<a href="#5-附录-关键-tdoc-索引">5. 附录：关键 TDoc 索引</a></nav>
+<main>
+
+<header class="hero">
+  <div class="hero-kicker">3GPP TSG RAN WG4 · Meeting #120-bis · 2026-10-12 ~ 10-16 · Jeju, South Korea</div>
+  <h1>RAN4#120-bis 济州岛会议 NTN 相关议题报告</h1>
+  <div class="hero-sub">EOM TDocList + Chair Notes + 22 份 Topic Summary / Way Forward 全文 · 全量 2212 篇中 NTN 相关约 280 篇</div>
+  <div class="stats">
+    <div class="stat"><b>267</b><span>NTN 议程文稿</span></div>
+    <div class="stat"><b>10</b><span>WI 级结论（WF）</span></div>
+    <div class="stat"><b>22</b><span>一手文档精读</span></div>
+    <div class="stat"><b>13+</b><span>覆盖议程项</span></div>
+  </div>
+</header>
+
+<h1>RAN4#120-bis（济州岛）NTN 相关议题报告</h1>
+<blockquote>
+<p><strong>一句话结论</strong>：RAN4#120-bis（2026-10-12~16，韩国济州，与 RAN1#126-bis 同周同地）NTN 工作全面进入"<strong>数值收口</strong>"阶段——六大 WI 全部产出会议结论（WF/Agreement）：<code>NR_IoT_NTN_Ph2</code> 的 PC1.5 dual Tx 给出完整 A-MPR 起点表、NTN DL CA 从"框架"推进到"参数+CR 分工"，<code>GNSS_resilient</code> 拿下 RF/RRM 双 WF（工作计划批至 #124），<code>IoT_NTN_Ph4</code> 敲定 PC0.5 MPR、<code>ext_guard</code> 敲定定义与信令基线，<code>NTN_bands_Features</code> 多个 A-MPR/RSD 落地；<strong>6G 侧 NTN 共存（[364]）产出首份 WF</strong>（SAN 相控阵模型/受害 TN 布局/NTN-NTN ACLR 24.2dB 推导），<strong>日本 2GHz 地面频段引入 NR-NTN 新 WID 首次上会</strong>（KDDI/SpaceX 等 9 家联署）——"NTN in TN bands"主线出现实质进展信号。</p>
+</blockquote>
+<hr />
+<h2 id="0-会议信息与数据源">0. 会议信息与数据源</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会议</td>
+<td>TSG RAN WG4 Meeting #120-bis</td>
+</tr>
+<tr>
+<td>时间地点</td>
+<td>2026-10-12 ~ 16，Jeju, South Korea（济州）</td>
+</tr>
+<tr>
+<td>TDoc 区间</td>
+<td><code class="tdoc">R4-2620000</code> – <code class="tdoc">R4-2622211</code></td>
+</tr>
+<tr>
+<td>全量文稿</td>
+<td>2212 篇（EOM TDocList）</td>
+</tr>
+<tr>
+<td><strong>NTN 相关文稿</strong></td>
+<td><strong>约 280 篇</strong>（其中 NTN 专属议程 267 篇；另含 [323]/[364] 总结类 7 篇、日本 WID 2 篇等）</td>
+</tr>
+<tr>
+<td>数据源</td>
+<td>① <code>Inbox/Tdoclist/TDoc_List_Meeting_RAN4#120-bis_EOM.zip</code>（终版文稿状态表）；② Chair Notes：BDaT v1(周一版)、RRM v03(周三后版)、Main session report EOM（<em>该文件在服务器端 403 不可下载</em>）；③ 18 份 Topic Summary / Way Forward 全文（FTP Docs/ 逐篇下载解析）</td>
+</tr>
+<tr>
+<td>说明</td>
+<td>会议官方 Report/ 目录截至分析时仅有 Skeleton Report；BDaT/RRM 的 EOM 版笔记与主 session EOM 报告尚未发布/不可访问。<strong>本报告结论以 EOM TDocList 状态 + 各 WF 文稿原文为准</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-ntn-议题全景-议程-wi-结论载体">1. NTN 议题全景（议程 × WI × 结论载体）</h2>
+<table class="wad">
+<thead>
+<tr>
+<th>议程</th>
+<th>议题</th>
+<th>WI</th>
+<th style="text-align: right;">文稿</th>
+<th>本次结论载体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.6.1</td>
+<td>NTN non-RRM（TEI20）</td>
+<td>Fixed_VSAT_Ku</td>
+<td style="text-align: right;">3</td>
+<td>WF <code class="tdoc">R4-2622015</code>（Agreement）</td>
+</tr>
+<tr>
+<td>5.5.2~5.5.6</td>
+<td>NTN 频段功能（3MHz/HPUE/(e)RedCap）</td>
+<td><code>NTN_bands_Features_R20</code></td>
+<td style="text-align: right;">14</td>
+<td>WF <code class="tdoc">R4-2622079</code>（Agreement）</td>
+</tr>
+<tr>
+<td>5.11.2</td>
+<td>LTE band 246 5G 广播（GSO）SAN 一致性</td>
+<td><code>LTE_band_246_5G_bcast_GSO_BWs</code></td>
+<td style="text-align: right;">1</td>
+<td>draft CR <code class="tdoc">R4-2621011</code>（endorsed）</td>
+</tr>
+<tr>
+<td>7.3.3</td>
+<td>NTN Ka/Ku 频段 OTA 测试方法</td>
+<td><code>NR_UE_OTA_Enh</code></td>
+<td style="text-align: right;">16</td>
+<td>TP <code class="tdoc">R4-2621839</code>（approved）</td>
+</tr>
+<tr>
+<td>7.6.x</td>
+<td>NR NTN 与 IoT NTN Phase 2 增强需求</td>
+<td><code>NR_IoT_NTN_req_Ph2-Core</code></td>
+<td style="text-align: right;"><strong>86</strong></td>
+<td>WF <code class="tdoc">R4-2622102</code> / 2622015 / 2622018（3 份 approved）</td>
+</tr>
+<tr>
+<td>7.12.x</td>
+<td>NR NTN 与 IoT NTN 扩展保护带</td>
+<td><code>NR_NTN_IoT_NTN_ext_guard</code></td>
+<td style="text-align: right;">21</td>
+<td>WF <code class="tdoc">R4-2622035</code> + Work Plan <code class="tdoc">R4-2622105</code>（approved）</td>
+</tr>
+<tr>
+<td>7.13</td>
+<td>IoT NTN PC1.5</td>
+<td><code>HPUE_IoT_NTN</code></td>
+<td style="text-align: right;">0</td>
+<td>无文稿、无议题活动</td>
+</tr>
+<tr>
+<td>7.18.x</td>
+<td>GNSS 弹性 NR-NTN</td>
+<td><code>NR_NTN_GNSS_resilient-Core</code></td>
+<td style="text-align: right;"><strong>47</strong></td>
+<td>WF <code class="tdoc">R4-2622020</code>（RF）+ <code class="tdoc">R4-2621828</code>（RRM）+ Work Plan <code class="tdoc">R4-2621474</code>（approved）</td>
+</tr>
+<tr>
+<td>7.19.x</td>
+<td>E-UTRA TN → NR NTN 切换增强</td>
+<td><code>LTE_TN_NR_NTN_HO-Core</code></td>
+<td style="text-align: right;">17</td>
+<td>WF <code class="tdoc">R4-2622104</code>（approved）</td>
+</tr>
+<tr>
+<td>7.20.x</td>
+<td>IoT NTN Phase 4（高功率）</td>
+<td><code>IoT_NTN_Ph4</code></td>
+<td style="text-align: right;">14</td>
+<td>WF <code class="tdoc">R4-2622021</code>（approved）</td>
+</tr>
+<tr>
+<td>8.3.6</td>
+<td>6G NTN UE RF 相关</td>
+<td><code>FS_6G_Radio</code></td>
+<td style="text-align: right;">4</td>
+<td>102-A Topic Summary <code class="tdoc">R4-2621590</code></td>
+</tr>
+<tr>
+<td>8.4.3.2</td>
+<td>NTN MEO 共存研究</td>
+<td><code>FS_6G_Radio</code></td>
+<td style="text-align: right;">12</td>
+<td>全部 noted，<strong>未出结论（延后）</strong></td>
+</tr>
+<tr>
+<td>8.4.4.x</td>
+<td>NTN-NTN / NTN-TN DL-DL 共存（RAN task [364]）</td>
+<td><code>FS_6G_Radio</code></td>
+<td style="text-align: right;">26</td>
+<td>WF <code class="tdoc">R4-2622084</code> + Summary <code class="tdoc">R4-2622022</code>（approved）</td>
+</tr>
+<tr>
+<td>8.5.4</td>
+<td>6G NTN 频谱相关</td>
+<td><code>FS_6G_Radio</code></td>
+<td style="text-align: right;">6</td>
+<td>104-A Topic Summary <code class="tdoc">R4-2621592</code></td>
+</tr>
+<tr>
+<td>13</td>
+<td>新/修订 WID</td>
+<td>日本 2GHz NR-NTN 新频段</td>
+<td style="text-align: right;">2</td>
+<td>WID new <code class="tdoc">R4-2621198</code>（noted，未决）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>状态分布（267 篇 NTN 专属议程文稿）</strong>：noted 230 / endorsed 13 / approved 11 / revised 6 / withdrawn 5 / postponed 1 / agreed 1。</p>
+<hr />
+<h2 id="2-逐议题进展详析">2. 逐议题进展详析</h2>
+<h3 id="2-1-主轴-nr-iot-ntn-req-ph2-7-6-三个并行-topic">2.1 主轴：<code>NR_IoT_NTN_req_Ph2</code>（7.6，三个并行 topic）</h3>
+<p>WID 分三个 moderator 小组：<strong>[346]</strong> 主 RF（CHTTL+Apple）、<strong>[347]</strong> HD-FDD/VSAT（MediaTek）、<strong>[348]</strong> RRM（LGE），本会各产出一份 approved WF。</p>
+<h4 id="2-1-1-pc1-5-dual-tx-7-6-3-数值收口最深-wf-r4-2622102">2.1.1 PC1.5 dual Tx（7.6.3）— 数值收口最深（WF <code class="tdoc">R4-2622102</code>）</h4>
+<ul>
+<li><strong>ULFPTx 模式框架</strong>（针对 n255，本 WI 只做 n255）：PC1.5 做 <strong>mode 1</strong>；PC2 做 <strong>mode 1,[2],0</strong>；PC3 做 <strong>mode 0</strong>；给出各模式测试配置表（DCI 0_1、单层、2 Tx 端口、TPMI 2/0 或 1）。</li>
+<li><strong>相干 MIMO 要求</strong>：仅 TPMI#2 适用，复用 TS 38.101-1 cl.6.4D.4 起点（相对相位差 40°、功率差 4 dB、20 ms 窗）；TAE 复用 cl.6.4D.3（≤130 ns）——<strong>要求各公司在 #121 前分析其在 NTN 场景下的适用性</strong>。</li>
+<li><strong>后缀</strong>：UL MIMO 用 suffix <strong>D</strong>、TxD 用 suffix <strong>G</strong>；确认 PC1.5 <strong>不需要 UTRA ACLR</strong>（n255）；SEM 沿用 NR-NTN PC3→PC1.5。</li>
+<li><strong>RSD</strong>：PC3→PC1.5 取三家提案平均（5/10/15/20MHz 分别 2.77/2.8/2.86/2.93 dB）为起点；non-handheld 2Tx 同值。</li>
+<li><strong>A-MPR（n255 NS_02N / NS_10N / NS_15N）</strong>：给出完整 A-MPR 区域与回退值表为<strong>起点</strong>，<strong>明确"将根据 #121（11 月）输入继续修改"</strong>（A1/A5-A9 区域需重点复核）。</li>
+<li><strong>CR 分工</strong>：A-MPR CR 由 Apple 牵头、其余 PC1.5 要求由 Huawei 牵头，终版 CR 归 Huawei。</li>
+</ul>
+<h4 id="2-1-2-nr-ntn-dl-ca-7-6-6-从框架到参数-wf-r4-2622102">2.1.2 NR NTN DL CA（7.6.6）— 从框架到参数（WF <code class="tdoc">R4-2622102</code>）</h4>
+<ul>
+<li><strong>JSON 机制</strong>：沿用 TN 的 JSON 机制（3GPP Forge 建 TS 38.101-5 及其 NR_bands / intra-band_CA / inter-band_CA 子目录）。</li>
+<li><strong>BCS0 两条配置落地</strong>：<code>CA_n255(2A)</code>（5+5 MHz）+ <code>CA_n512</code>（400+400 MHz）；BCS4/5 机制鼓励继续研究。</li>
+<li><strong>UE 能力影响</strong>：BandCombinationList 的 bandNR / ca-BandwidthClassDL-NR / powerClass / supportedBandwidthCombinationSet 需更新指向 38.101-5。</li>
+<li><strong>FR1-NTN（n255 5+5MHz NC CA）</strong>：给出 ΔRIBNC 表（PC3: 0/0.8/1.6 dB；PC2: N/A/[2.8]/N/A；PC1.5: 2/N/A/3.3；PC1: 按 1Tx/2Tx/4Tx 分列）；max input/ACS/IBB/NBB/OOBB 复用单载波值为起点；<strong>SAN TAE ≤3µs</strong>（type 1-H / 1-O，&lt;10GHz）。</li>
+<li><strong>FR2-NTN（n512 400+400MHz）</strong>：CA 支持与 VSAT 类型无关；EIS 松弛 ΔRIBC = 0 dB（type 1,4）/ [0.3] dB（type 3）/ [1~2] dB（type 2,5）；OTA max input/ACS/blocking 复用单载波；<strong>SAN TAE ≤130ns</strong>（type 2-O，60/120 kHz SCS）。</li>
+<li><strong>CR/TP 分工表</strong>：TR 38.764（5.1/5.2/5.3 三段）、TS 38.101-5（Huawei 管系统参数与 5.x、LGE 管 7.x/10.x 接收、ZTE 管 7.5A/7.6A、vivo 出 running CR）、TS 38.108（ZTE 管 6.x、CATT 管 9.x）。</li>
+<li><strong>Release independence（7.6.7，Agreement）</strong>：PC1.5 自 Rel-17；HD-FDD VSAT 自 Rel-19（Ku/Ka）；NTN DL intra-band intra-SAN CA 自 Rel-18。</li>
+</ul>
+<h4 id="2-1-3-hd-fdd-vsat-7-6-4-7-6-5-1-ku-ka-fr2-numerology-wf-r4-2622015">2.1.3 HD-FDD VSAT（7.6.4 / 7.6.5.1，Ku+Ka × FR2 numerology）（WF <code class="tdoc">R4-2622015</code>）</h4>
+<ul>
+<li><strong>TEI20（4.6.1）</strong>：Ku 频段 FD-FDD 固定 VSAT Type 1/2/3 经 TEI20 引入（FR1+FR2），CR <strong><code class="tdoc">R4-2620851</code> endorsed</strong>；但"release independent 到 Rel-19"因 <strong>MCC 反对（TEI 与 release independence 冲突）转为 <span class="b-ffs">FFS</span></strong>，<code class="tdoc">R4-2620852</code> 仅 noted。</li>
+<li><strong>Ku HD-FDD</strong>：Type 7（小天线+GSO）是否支持 → <strong><span class="b-ffs">FFS</span></strong>；Type 8（LEO-only）400 MHz 带宽<strong>不做任何 RF 要求松弛</strong>（Agreement）。</li>
+<li><strong>Ka HD-FDD Type 6</strong>：采用——最小保证 EIRP <strong>68 dBm</strong>、EISREFSENS_50M <strong>−122 dBm</strong>、其余复用 Type 3、on-axis spurious 复用 types 4/5。</li>
+<li><strong>Ka 小天线（Type 8）</strong>：目标 SNR 是否降到 −1dB 以下（如 −6dB）<span class="b-ffs">FFS</span>，<strong>EIS 仍按 −1dB SNR 推导</strong>；卫星参数（GEO/LEO-1200/LEO-600 的 EIRP 密度、G/T）给定起点；天线架构不设限（满足 20×20cm 链路预算即可）；Type 8 的 Tx/Rx 具体数值<strong>全部留待 #121</strong>。</li>
+<li><strong>TR 38.764 分工</strong>：Ku VSAT（Sharp/LG）、Ka VSAT（CSCN/CATT）、Ka 小天线（ZTE）。</li>
+<li>维护侧 3 篇 draft CR（ZTE 杂散、CATT/CSCN 辐射接收、MediaTek 成都 VSAT 类型定义）<strong>均 endorsed</strong>。</li>
+</ul>
+<h4 id="2-1-4-rrm-部分-7-6-5-2-7-6-6-3-wf-r4-2622018">2.1.4 RRM 部分（7.6.5.2 / 7.6.6.3）（WF <code class="tdoc">R4-2622018</code>）</h4>
+<ul>
+<li><strong>HD-FDD VSAT FR2 RRM</strong>：<strong>不再保留 legacy 的 SSB-availability 条件</strong>；以 Phase 1 结论 + 已认可的 big CR（<code class="tdoc">R4-2600163</code>）为基线；CR 分工到公司（Ericsson/LGE/Xiaomi/Nokia/Samsung/ZTE/CATT/Huawei/MTK 分列 4.2C~9.5C 各条款）；新增两条 <strong>UE feature list 条目</strong>（x-1 <code>halfDuplexFDD-TypeA-VSAT-r20</code>、x-2 <code>ntn-Collision-HDFDD-VSAT-r20</code>）；<strong>发 RAN2 的 LS 推迟至 RAN4#122</strong>。</li>
+<li><strong>NTN DL intra-SAN CA（RRM）</strong>：FR2-NTN 以"TN intra-band DL CA + 现有 FR2-NTN 要求"为联合基线；新需求用 <strong>suffix "C"</strong> 子条款；<strong>FR2-NTN CA 支持 SSB-less SCell</strong>（复用 TN FR2 legacy 基线）；FR1-NTN 的 SSB-less 与 blind SCell 留待下次。</li>
+</ul>
+<h3 id="2-2-nr-ntn-gnss-resilient-7-18-rf-rrm-双线收口">2.2 <code>NR_NTN_GNSS_resilient</code>（7.18）— RF/RRM 双线收口</h3>
+<p><strong>RF 侧（WF <code class="tdoc">R4-2622020</code>，Thales）：</strong><br />
+- <strong>工作计划批准</strong>：Core 至 RAN4#122（2027-01，出 38.101-5/38.133 CR），Perf 部分 #122-bis~#124（2027-08 批 CR）。<br />
+- "<strong>理想预补偿频率</strong>"定义 = 以 UE 可用信息（GNSS/参考位置、星历、显式 FAC）做理想预补偿；<strong>FAC 正确性由网络负责</strong>；UE 不承担超出网络指示的频率调整最小要求。<br />
+- <strong>闭环</strong>：复用 ±0.1ppm/1ms 为起点（相对理想预补偿频率）；FAC 接收-生效延迟归 RRM；T_settle 内行为 <span class="b-ffs">FFS</span>。<br />
+- <strong>开环</strong>：删除 RAN4#120 的 Option 2（Msg2 前不定义需求）；Option 1（不定义）/Option 3（Msg2 后定义）保留待议。</p>
+<p><strong>RRM 侧（WF <code class="tdoc">R4-2621828</code>，Thales）：</strong><br />
+- <strong>Scenario 1 为本次唯一焦点</strong>（network assistance/参考位置方案）；Scenario 2（last-known GNSS）<strong>下会开始讨论</strong>（公司分歧：HW/MTK/ZTE/CATT/E/// 推进 vs Samsung/OPPO/QC/Apple 观望）。<br />
+- Scenario 1 需求适用前提 = NGSO + 新 2 序列 PRACH 随机接入（GSO 留 <span class="b-ffs">FFS</span>）。<br />
+- <strong>Te_NTN 重定义</strong>：以网络参考位置（Earth-fixed）或 common TA/Doppler（Earth-moving）为参考，<strong>去掉 UE GNSS 定位误差 margin</strong>；适用于 PRACH 与连接态。<br />
+- 渐变时间调整（Tp_NTN/Tq_NTN）→ 复用性评估；<strong>渐变频率调整不定义</strong>（Scenario 1）；TAC 复用现有 NTN 时延/精度为起点；<strong>RRM 侧不定义 FAC 精度</strong>。<br />
+- 移动性：legacy 基于位置的 cell reselection/CHO 要求<strong>不适用</strong>；Scenario 1 服务小区与 intra-satellite 邻区测量复用 legacy；<strong>inter-satellite 测量</strong>鼓励量化恶化并给出三种缓解方向（增采样/调搜索窗/松精度）；<strong>本 WID 不支持 TN↔NTN 测量与移动性</strong>；SMTC 调整由 UE 实现决定（IDLE）；连接态 SMTC 等 RAN2 结论。</p>
+<h3 id="2-3-lte-tn-nr-ntn-ho-7-19-wf-r4-2622104-catt">2.3 <code>LTE_TN_NR_NTN_HO</code>（7.19，WF <code class="tdoc">R4-2622104</code>，CATT）</h3>
+<ul>
+<li><strong>known/unknown cell 定义</strong>（Agreement）：HO 命令前 5 秒内 UE 发过有效测量报告且目标小区满足小区识别要求 → known；<strong>known 情形定义 HO 要求且不考虑 TGNSS</strong>；unknown 情形两选项（Option 1 不定义 / Option 2 有条件定义）留待下次。</li>
+<li>排除<strong>切换中途硬/软卫星切换</strong>场景；复用 legacy 原则（星历/common TA/极化/Koffset/Kmac 有效为前提）。</li>
+<li>开放项：UE 操作模式切换延迟（是否引入、[10]ms 或能力上报 0ms 选项）；E-UTRAN→NR NTN 的 SSB/小区数基线（[4] cell / [7] SSB / GEO 4 SSB / NGSO 1 星）；side condition 复用性。</li>
+</ul>
+<h3 id="2-4-iot-ntn-ph4-7-20-wf-r4-2622021-vivo">2.4 <code>IoT_NTN_Ph4</code>（7.20，WF <code class="tdoc">R4-2622021</code>，vivo）</h3>
+<ul>
+<li><strong>PC0.5 MPR 敲定</strong>（Agreement，单音/多音全表）；<strong>A-MPR</strong>：NS_02N 无需 A-MPR；NS_10N/NS_15N 起点值给出；"RAN4 侧在任一频段 A-MPR 完成即可结项"。</li>
+<li><strong>PC0.1 MPR</strong>：倾向同意但允许公司核对至 <strong>#121</strong>（tentative）。</li>
+<li><strong>热/功率处理（GEO 语音）</strong>：目标=尽可能多的 SA 编解码速率与 bundling 周期；方案二选一（Option 1 定义最小 UL 占空比如 20% + 评估周期 80/160ms；Option 2 只在 RMC 处理 + core 要求加注）；RMC 与 Issue 3-1 结论联动、下次继续。</li>
+<li>相关 CR：CATT 的 B256/B255 PC0.5/PC0.1 CR（<code class="tdoc">R4-2621109</code>）<strong>postponed</strong>；Ericsson（38.863 共存结果）、vivo（38.863 CR）<strong>endorsed</strong>。</li>
+</ul>
+<h3 id="2-5-nr-ntn-iot-ntn-ext-guard-7-12-wf-r4-2622035-wp-r4-2622105-sony">2.5 <code>NR_NTN_IoT_NTN_ext_guard</code>（7.12，WF <code class="tdoc">R4-2622035</code> + WP <code class="tdoc">R4-2622105</code>，Sony）</h3>
+<ul>
+<li><strong>工作计划批准</strong>（Option 1）：#120-bis 定义/原则 → #121 取值 → #122 定值并出 38.101-5/36.102 CR + 38.863 TP。</li>
+<li><strong>定义（基线）</strong>：扩展保护带 = <strong>相对 UE 信道带宽边缘的频偏</strong>。</li>
+<li><strong>IoT NTN</strong>：至少 <strong>SIB 广播</strong>（NS 还是新 IE 待定）；UE 能力三选项 <span class="b-ffs">FFS</span>；UE 行为三选项（Nordic/Sony/Qualcomm 方案）<span class="b-ffs">FFS</span>；release independence 推迟到信令设计明确后；<strong>cat-M1 评估推迟到未来版本</strong>；评估起点 <strong>100 kHz</strong>（目标：b255/b249/254 全功率等级 0 dB A-MPR）。</li>
+<li><strong>NR NTN</strong>：聚焦 <strong>5 MHz 带宽</strong>，起点 <strong>1000 kHz</strong>（讨论中出现 500/1000 kHz 两值选项）；A-MPR 目标四选项（含"A-MPR ≤ MPR"）；每频段 1 个还是 2 个保护带值待定。</li>
+</ul>
+<h3 id="2-6-ntn-bands-features-r20-5-5-wf-r4-2622079-apple">2.6 <code>NTN_bands_Features_R20</code>（5.5，WF <code class="tdoc">R4-2622079</code>，Apple）</h3>
+<ul>
+<li><strong>已落地（Agreement/endorsed）</strong>：n255 的 3 MHz+PC2/PC1 组合——<strong>无需新 A-MPR 工作</strong>（NS_10N/NS_15N 与 n251 共用）、RSD 复用 n251 3MHz 值；<strong>NS_11N PC2（b249/254）A-MPR 采用</strong>（3.75kHz ≤20.5 / 15kHz 单音 ≤16.5 … 12 音 ≤6）；<strong>b252 的 NS_06N/07N/08N 对 PC2 无需 A-MPR</strong>；<strong>b253（NS_09N）PC1.5 复用 n255 的 A-MPR</strong>。draft CR endorsed：Apple（RSD 澄清 ×2、n254 PC2，<code class="tdoc">R4-2620738</code>/739/740）、ViaSat（b253 PC1.5，<code class="tdoc">R4-2621399</code>/1400；n255 3MHz PC2/PC1，<code class="tdoc">R4-2621402</code>）。</li>
+<li><strong>未决（留 #121）</strong>：n252/n254 PC1 的 RSD 值；NS_04N/NS_05N/NS_12N 的 PC2 A-MPR（MediaTek 与 Qualcomm 提案存在 0.5dB 系统性偏差）；b252 的 PC1 A-MPR；n256 NS_24N PC2 A4 A-MPR 是否 +1.5/+2.0 dB（Skyworks 提出）；Apple 指出的 NS_15N/NS_16N/NS_24N 历史问题将于 #121 以维护 CR 修正。</li>
+</ul>
+<h3 id="2-7-ka-ku-ota-测试方法-7-3-3-nr-ue-ota-enh-与-tei20-外围">2.7 Ka/Ku OTA 测试方法（7.3.3，<code>NR_UE_OTA_Enh</code>）与 TEI20 外围</h3>
+<ul>
+<li><strong>TP 批准（<code class="tdoc">R4-2621839</code>，CATT+厦门三安）</strong>：TR 38.763 确立 <strong>Free Space（FS）测试配置为 Ka/Ku 频段 OTA 唯一测试条件</strong>；给出 NTN 频率范围定义（FR1-NTN 410–14500 MHz、FR2-NTN 10700–30000 MHz）与 10GHz 以上频段表（n247/n248 为 FR1-NTN、n508–n512 为 FR2-NTN）。</li>
+<li>相关 LS：<strong>回复 ETSI TC-SES 的 LS 批准</strong>（<code class="tdoc">R4-2621852</code>，与 Eutelsat <code class="tdoc">R4-2621456</code> 合作议题联动）；<strong>GSMA 的"Request to Implement Free Space Testing"LS 收到</strong>（<code class="tdoc">R4-2622210</code>）。</li>
+<li>其余 15 篇（CAICT 离轴 EIRP、Keysight 极化失配/测试可测性、R&amp;S 2-norm 静区指标、Qualcomm 天线指向精度验证等）均 noted，待 TR 继续完善。</li>
+<li><strong>LTE band 246（5.11.2）</strong>：ZTE 的 TS 36.181 CR（引入 3MHz/5MHz 信道带宽，面向 Region 3 GSO 5G 广播）<strong>endorsed</strong>。</li>
+</ul>
+<h3 id="2-8-6g-ntn-议程-8-fs-6g-radio">2.8 6G NTN（议程 8，<code>FS_6G_Radio</code>）</h3>
+<ul>
+<li><strong>NTN 共存 RAN task [364]（WF <code class="tdoc">R4-2622084</code> 批准，AT&amp;T+Ericsson 主持）</strong>——场景 = NTN DL → TN DL（2.1GHz：n256 → n66）与 NTN-NTN DL-DL：</li>
+<li><strong>SAN 天线</strong>：以 TR 38.922 相控阵模型为基线，多波束机制 <span class="b-ffs">FFS</span>；初始评估用相关值 0.0/1.0 两档。</li>
+<li><strong>SAN 发射参数</strong>：初始评估用 R1-2606916 的 Set 6G-1；允许公司选择波束数（恒定 PDF 受限 / 恒定 EIRP 密度两法），须以 PFD 目标（−89 或 −85.5 dBW/m²/MHz，ViaSat 提出后者）验证地面信号水平，并对齐 TR 38.863 的 7 波束 C/I 目标。</li>
+<li><strong>受害 TN</strong>：19 站 57 扇区布局（关 wrap-around）；边缘噪声受限两种刻画（用户半径 2.1~2.7×ISD 或 RSRP 5% −120dBm+3dB noise rise）；ISD 5/7.5km、站高 30/45m；BS 天线 AAS（Rel-19 IMT 研究 TR 38.922 cl.4.4.1）/non-AAS（TR 38.863 cl.6.2.3.2）双模型；UE 各向同性 0dBi。</li>
+<li><strong>NTN-NTN</strong>：加载因子 100%（最坏情形）；性能指标 = 平均与 5%-ile 吞吐损失 &lt;5%；<strong>SAT ACLR 推导值 24.2 dB</strong>（GEO 受害 30°、LEO-600 攻击 90° 最坏组合），考虑单星收紧；SAN 天线基线取 <strong>Option 2（TR 38.863 Bessel 圆孔径模型）</strong>。</li>
+<li>未决（下次继续）：干扰求和法、缩放因子、覆盖几何（Huawei vs Ericsson 两案待调和）、UE 去极化损失建模等。</li>
+<li><strong>MEO 共存（8.4.3.2）</strong>：12 篇全部 noted、<strong>未产出任何结论</strong>；Thales（<code class="tdoc">R4-2621511</code>）直言部分假设"不相关、在 RAN4 现有工作量下讨论完全低效"——该子课题实质上被<strong>降优先级/挂起</strong>，值得持续跟踪。</li>
+<li><strong>6G NTN UE RF（8.3.6，102-A 总结 <code class="tdoc">R4-2621590</code>）</strong>：总基调 = <strong>TN/NTN 需求尽量和谐化</strong>（OPPO/ZTE），个案例外需 NTN 特性或监管理由；议题含设备类型简化（VSAT 分类重构）、功率等级对齐、UL-MIMO/CA（等 SNO 商业需求反馈）、杂散（vivo 主张直接套用 TN 结论、ZTE 建议自适应 LO 方案）、其他依赖（占空比热缓解、GNSS-free 与 5GA GNSS 弹性研究对齐——Samsung 提醒避免重复）。</li>
+<li><strong>6G NTN 频谱（8.5.4，104-A 总结 <code class="tdoc">R4-2621592</code>）</strong>：焦点是 6G NTN 频率范围如何定义——OPPO（10GHz 单一断点、Ku 只按 FR2 引入）；ZTE（下界维持 5G NTN、上界随 SNO、频段组合框架等 Rel-20 WID 共识）；Nokia（沿用现 NTN FR、对齐讨论推迟到 WI 阶段）；CATT（复用 FR1-NTN/FR2-NTN、尽量单 FR 频段、考虑全部现 NTN 频段 refarming、Ka/Ku 优先）；LGE（研究把 10GHz 以上 VSAT 合并进 FR2-NTN、引入 "s" 前缀频段命名）。</li>
+</ul>
+<h3 id="2-9-新立项与外围信号">2.9 新立项与外围信号</h3>
+<ul>
+<li><strong>日本 2GHz 地面频段 NR-NTN 新 WID</strong>（议程 13，<code class="tdoc">R4-2621198</code>，KDDI/SpaceX/T-Mobile/Rogers/Telstra/NTT DOCOMO/Ericsson/MediaTek/Qualcomm 联署）：新增 NR-NTN FDD 频段（UL 1920–1980 / DL 2110–2170 MHz，即日本 n1 频段），PC3、尽量复用 n1 要求，Rel-20、RAN4 主导，目标 RAN#115（2027-03）；<strong>本次仅 noted（未决）</strong>，是"NTN 复用地面 IMT 频段"路线继 RAN#108（RP-251803 承诺 2027 商用）后的最新动作，与 6G 共存研究（2.1GHz n256/n66）互为呼应。</li>
+<li>AWS 的 n254 原生 16.5 MHz 带宽/非重叠 CA 讨论（4 篇 withdrawn、3 篇 noted）——未获推进。</li>
+<li><strong>A-MPR JSON</strong>（议程 12）：WF <code class="tdoc">R4-2622109</code> approved。</li>
+<li><strong>AOB</strong>：AST SpaceMobile 提交《NR NTN 下行补偿系统的需求影响》（<code class="tdoc">R4-2620346</code>）——直接关联 RAN#113 新批的 <strong>NR_NTN_DLCOMP</strong> WI（RAN1 主导、RAN4 管流程），本次仅 noted，属提前布局。</li>
+</ul>
+<hr />
+<h2 id="3-公司态势与争议焦点">3. 公司态势与争议焦点</h2>
+<p><strong>文稿量 Top（NTN 专属议程，联合署名按公司计）</strong>：CATT 30 / Huawei 24 / vivo 20 / ZTE 19 / Ericsson 18 / MediaTek 17 / Thales 16 / Apple 15 / Qualcomm 15 / LGE 13 / Samsung 11 / CHTTL 10 / Sharp 8 / Viasat 8 / OPPO 7 / Nokia 7 / Sony 6 / SpaceX 5；卫星运营商侧（Viasat/SES/AST/Iridium/SpaceX/Eutelsat/JSAT/Globalstar）全面活跃于 VSAT 类型、功率等级与 A-MPR 议题。</p>
+<p><strong>主要争议点（本会实录）</strong>：<br />
+1. <strong>PC1.5 dual Tx 的 ULFPTx 模式范围</strong>：Samsung/Ericsson/CATT 主张"只做 mode 1"，Huawei/Qualcomm 主张保留 mode 2（"不能因为信令可用就定需求"vs"全功率发射是 UE 能力、不必在规范排除"）→ 结论折中为 PC1.5=mode1、PC2 含 mode1,[2],0。<br />
+2. <strong>相干 MIMO 要求照搬 TN</strong>：Viasat 明确反对未研究即复制 TN 相干要求到 NTN → WF 保留"各公司分析适用性、下会出结果"。<br />
+3. <strong>Ku Type 7（小天线+GSO）</strong>：Qualcomm/Thales 支持引入，Huawei/ZTE 反对（"Ku FR1 已有"、"链路预算不闭合"）→ <span class="b-ffs">FFS</span>。<br />
+4. <strong>Ka 链路预算的目标 SNR</strong>：Thales/Sharp 主张评估用低 SNR、定值仍按 −1dB；Huawei 要求更强论证 → "低于 −1dB 可行性 <span class="b-ffs">FFS</span>，EIS 按 −1dB"。<br />
+5. <strong>GNSS Scenario 2（last-known 位置）</strong>：Qualcomm/Apple/Samsung 主张等 RAN1 明确"sufficient and valid"再谈；Huawei/MTK/ZTE/CATT/Ericsson/Xiaomi/vivo 主张下会即开始 → 折中"本次聚焦 Scenario 1，下会开始 Scenario 2"。<br />
+6. <strong>TEI 与 release independence 的规则冲突</strong>：MCC 当场指出 TEI20 特性不能 release-independent（引 <code class="tdoc">RP-260762</code> 先例），CHTTL 以"移动 VSAT 已 RI 到 Rel-19"反驳 → Fixed_VSAT_Ku 的 RI 留 <span class="b-ffs">FFS</span>，<strong>是本次 TEI20 新引入中的一个制度性风险点</strong>。<br />
+7. <strong>MEO 共存研究效率</strong>：Thales 公开质疑讨论低效，与 RAN4 工作量的矛盾显性化 → 该议题被挂起。<br />
+8. <strong>6G NTN 与 TN 的频段/需求和谐化</strong>：总体共识"能合则合"，但 Ku 频段 FR1-NTN/FR2-NTN 双轨并存的整理方向（LGE 主张合并）尚无结论。</p>
+<p><strong>联通参与情况</strong>：RAN4#120-bis 联通共 8 篇文稿，<strong>全部在地面（TN）方向</strong>——DC_xBLTE_yBNR 议题担任 moderator（[321]，<code class="tdoc">R4-2621562</code>）、CA_n1A-n3A-n78D 组合 CR endorsed（<code class="tdoc">R4-2622066</code>）、NR_CADC_SUL_R20_HPUE big CR 联署；<strong>NTN 方向零文稿</strong>。</p>
+<hr />
+<h2 id="4-下步关注与建议-面向-ran4-121-2026-11-16-20-calgary">4. 下步关注与建议（面向 RAN4#121，2026-11-16~20 Calgary）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>议题</th>
+<th>#121 预期动作</th>
+<th>与我方相关性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>PC1.5 A-MPR（NS_02N/10N/15N）</td>
+<td>按公司输入<strong>修改起点表</strong>，可能定稿</td>
+<td>n255 高功率终端（国内 L 波段）</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NS_04N/05N/12N 的 PC2 A-MPR、PC1 RSD、NS_24N A4</td>
+<td>公司补分析后定值</td>
+<td>直接决定 NB-IoT NTN 高功率可用性</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GNSS resilient Scenario 2</td>
+<td><strong>开始讨论</strong>；Te_NTN 的 Tg 分解（Tp/Tr/Ta/Tf/Tm）要求逐项给数</td>
+<td>与北斗可用性场景强相关</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ka 小天线 Type 8 全部 Tx/Rx 参数、Ku Type 7 命运</td>
+<td>定值或继续 <span class="b-ffs">FFS</span></td>
+<td>决定 Ka VSAT 生态（星网/垣信类系统）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>NTN DL CA CR 起草</td>
+<td>各公司按分工交 running CR</td>
+<td>n255/n512 CA 终端的规范底座</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MEO 共存</td>
+<td>是否继续/如何简化</td>
+<td>Ka 频段 MEO 系统（星网类）共存规则</td>
+</tr>
+<tr>
+<td>7</td>
+<td>日本 2GHz NR-NTN WID</td>
+<td>可能提交 RAN#114 审议</td>
+<td><strong>"NTN in TN bands"制度先例</strong>，与国内 2.1GHz 议题镜像</td>
+</tr>
+<tr>
+<td>8</td>
+<td>6G NTN 共存方法论</td>
+<td>干扰求和/覆盖几何收口</td>
+<td>6G 阶段 NTN 与 TN 共存的规则预研</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-附录-关键-tdoc-索引">5. 附录：关键 TDoc 索引</h2>
+<table class="wad">
+<thead>
+<tr>
+<th>TDoc</th>
+<th>议程</th>
+<th>类型</th>
+<th>标题（简）</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="tdoc">R4-2622102</code></td>
+<td>7.6.1</td>
+<td>WF</td>
+<td>[346] NR_IoT_NTN_Ph2（PC1.5 dual Tx + DL CA + RI）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622015</code></td>
+<td>7.6.1</td>
+<td>WF</td>
+<td>[347] Ph2_Part2（HD-FDD VSAT Ku/Ka）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622018</code></td>
+<td>7.6.1</td>
+<td>WF</td>
+<td>[348] Ph2_Part3_RRM（HD-FDD FR2 + CA RRM）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622020</code></td>
+<td>7.18.1</td>
+<td>WF</td>
+<td>[349] GNSS_resilient（RF）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2621828</code></td>
+<td>7.18.1</td>
+<td>WF</td>
+<td>[208] GNSS_resilient（RRM）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622104</code></td>
+<td>7.19.1</td>
+<td>WF</td>
+<td>[350] LTE_TN_NR_NTN_handover</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622021</code></td>
+<td>7.20.1</td>
+<td>WF</td>
+<td>[351] LTE_IoT_NTN_high_power（PC0.5/PC0.1）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622035</code></td>
+<td>7.12.1</td>
+<td>WF</td>
+<td>[356] NR_IoT_extended_guardband</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622079</code></td>
+<td>5.1</td>
+<td>WF</td>
+<td>[323] NTN_bands_Features</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622084</code></td>
+<td>8.1.1</td>
+<td>WF</td>
+<td>[364] NTN_coexistence</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622105</code></td>
+<td>7.12.2</td>
+<td>Work Plan</td>
+<td>扩展保护带工作计划</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2621474</code></td>
+<td>7.18.2</td>
+<td>Work Plan</td>
+<td>GNSS_resilient 工作计划</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2621839</code></td>
+<td>7.3.2/7.3.3</td>
+<td>pCR</td>
+<td>TR 38.763 测试配置 TP（FS 唯一条件）</td>
+<td>approved</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2622013</code></td>
+<td>7.6.2</td>
+<td>draft TR</td>
+<td>TR 38.764 骨架</td>
+<td>agreed</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2620851</code></td>
+<td>4.6.1</td>
+<td>draftCR</td>
+<td>Ku FD-FDD 固定 VSAT 1/2/3（TEI20）</td>
+<td>endorsed</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2621011</code></td>
+<td>5.11.2</td>
+<td>draftCR</td>
+<td>LTE band 246 3/5MHz（GSO 广播）</td>
+<td>endorsed</td>
+</tr>
+<tr>
+<td><code class="tdoc">R4-2621198</code></td>
+<td>13</td>
+<td>WID new</td>
+<td>日本 2GHz NR-NTN 新频段</td>
+<td>noted</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>原始数据与关键文稿全文归档于本目录 <code>raw_tdocs/</code>（EOM TDocList、<code>_mi/</code> 18+4 份关键文稿 docx/txt）与 <code>chair_notes/</code>（BDaT/RRM session notes 及转换文本）。</p>
+</blockquote>
+<div class="foot">RAN4#120-bis NTN 报告（美化版 v3）· 生成 2026-10-18 ·
+数据源：TSGR4_120bis FTP 一手材料（EOM TDocList 2212 行 + 22 份 Topic Summary/WF 全文 + BDaT/RRM session notes）·
+所有数字/编号可溯源至 R4- 文档 · md 源文件同名 .md</div>
+</main>
+</body>
+</html>
