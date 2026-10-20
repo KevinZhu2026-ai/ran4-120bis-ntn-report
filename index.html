@@ -94,7 +94,7 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <header class="hero">
   <div class="hero-kicker">3GPP TSG RAN WG4 · Meeting #120-bis · 2026-10-12 ~ 10-16 · Jeju, South Korea</div>
   <h1>RAN4#120-bis 济州岛会议 NTN 相关议题报告</h1>
-  <div class="hero-sub">EOM TDocList + Chair Notes + 22 份 Topic Summary / Way Forward 全文 · 全量 2212 篇中 NTN 相关约 280 篇</div>
+  <div class="hero-sub">EOM TDocList + Chair Notes + 22 份 Topic Summary / Way Forward 全文 · 全量 2212 篇中 NTN 相关 283 篇</div>
   <div class="stats">
     <div class="stat"><b>267</b><span>NTN 议程文稿</span></div>
     <div class="stat"><b>10</b><span>WI 级结论（WF）</span></div>
@@ -103,6 +103,8 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
   </div>
 </header>
 
+<pre><code>
+</code></pre>
 <h1>RAN4#120-bis（济州岛）NTN 相关议题报告</h1>
 <blockquote>
 <p><strong>一句话结论</strong>：RAN4#120-bis（2026-10-12~16，韩国济州，与 RAN1#126-bis 同周同地）NTN 工作全面进入"<strong>数值收口</strong>"阶段——六大 WI 全部产出会议结论（WF/Agreement）：<code>NR_IoT_NTN_Ph2</code> 的 PC1.5 dual Tx 给出完整 A-MPR 起点表、NTN DL CA 从"框架"推进到"参数+CR 分工"，<code>GNSS_resilient</code> 拿下 RF/RRM 双 WF（工作计划批至 #124），<code>IoT_NTN_Ph4</code> 敲定 PC0.5 MPR、<code>ext_guard</code> 敲定定义与信令基线，<code>NTN_bands_Features</code> 多个 A-MPR/RSD 落地；<strong>6G 侧 NTN 共存（[364]）产出首份 WF</strong>（SAN 相控阵模型/受害 TN 布局/NTN-NTN ACLR 24.2dB 推导），<strong>日本 2GHz 地面频段引入 NR-NTN 新 WID 首次上会</strong>（KDDI/SpaceX 等 9 家联署）——"NTN in TN bands"主线出现实质进展信号。</p>
@@ -135,11 +137,11 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 </tr>
 <tr>
 <td><strong>NTN 相关文稿</strong></td>
-<td><strong>约 280 篇</strong>（其中 NTN 专属议程 267 篇；另含 [323]/[364] 总结类 7 篇、日本 WID 2 篇等）</td>
+<td><strong>283 篇</strong>（NTN 专属议程 267 篇 + 相关 16 篇：[323] 2、[364] 5、日本 2GHz WID 2、6G/维护类 7）</td>
 </tr>
 <tr>
 <td>数据源</td>
-<td>① <code>Inbox/Tdoclist/TDoc_List_Meeting_RAN4#120-bis_EOM.zip</code>（终版文稿状态表）；② Chair Notes：BDaT v1(周一版)、RRM v03(周三后版)、Main session report EOM（<em>该文件在服务器端 403 不可下载</em>）；③ 18 份 Topic Summary / Way Forward 全文（FTP Docs/ 逐篇下载解析）</td>
+<td>① <code>Inbox/Tdoclist/TDoc_List_Meeting_RAN4#120-bis_EOM.zip</code>（终版文稿状态表）；② Chair Notes：BDaT v1(周一版)、RRM v03(周三后版)、Main session report EOM（<em>该文件在服务器端 403 不可下载</em>）；③ 22 份 Topic Summary / Way Forward 全文（FTP Docs/ 逐篇下载解析）</td>
 </tr>
 <tr>
 <td>说明</td>
@@ -286,9 +288,9 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <li><strong>JSON 机制</strong>：沿用 TN 的 JSON 机制（3GPP Forge 建 TS 38.101-5 及其 NR_bands / intra-band_CA / inter-band_CA 子目录）。</li>
 <li><strong>BCS0 两条配置落地</strong>：<code>CA_n255(2A)</code>（5+5 MHz）+ <code>CA_n512</code>（400+400 MHz）；BCS4/5 机制鼓励继续研究。</li>
 <li><strong>UE 能力影响</strong>：BandCombinationList 的 bandNR / ca-BandwidthClassDL-NR / powerClass / supportedBandwidthCombinationSet 需更新指向 38.101-5。</li>
-<li><strong>FR1-NTN（n255 5+5MHz NC CA）</strong>：给出 ΔRIBNC 表（PC3: 0/0.8/1.6 dB；PC2: N/A/[2.8]/N/A；PC1.5: 2/N/A/3.3；PC1: 按 1Tx/2Tx/4Tx 分列）；max input/ACS/IBB/NBB/OOBB 复用单载波值为起点；<strong>SAN TAE ≤3µs</strong>（type 1-H / 1-O，&lt;10GHz）。</li>
+<li><strong>FR1-NTN（n255 5+5MHz NC CA）</strong>：给出 ΔRIBNC 表（按 1Tx/2Tx/4Tx 三档：PC3 0/N/A/N/A；PC2 0.8/1.6/N/A；PC1.5 N/A/[2.8]/N/A；PC1 2/N/A/3.3）；max input/ACS/IBB/NBB/OOBB 复用单载波值为起点；<strong>SAN TAE ≤3µs</strong>（type 1-H / 1-O，&lt;10GHz）。</li>
 <li><strong>FR2-NTN（n512 400+400MHz）</strong>：CA 支持与 VSAT 类型无关；EIS 松弛 ΔRIBC = 0 dB（type 1,4）/ [0.3] dB（type 3）/ [1~2] dB（type 2,5）；OTA max input/ACS/blocking 复用单载波；<strong>SAN TAE ≤130ns</strong>（type 2-O，60/120 kHz SCS）。</li>
-<li><strong>CR/TP 分工表</strong>：TR 38.764（5.1/5.2/5.3 三段）、TS 38.101-5（Huawei 管系统参数与 5.x、LGE 管 7.x/10.x 接收、ZTE 管 7.5A/7.6A、vivo 出 running CR）、TS 38.108（ZTE 管 6.x、CATT 管 9.x）。</li>
+<li><strong>CR/TP 分工表</strong>：TR 38.764（5.1/5.2/5.3 三段）；TS 38.101-5（Huawei 管 4/5 与 10.5A/10.6A、LGE 管 7/7.3A/7.4A 与 10/10.3A/10.4A、ZTE 管 7.5A/7.6A、vivo 出 running CR）；TS 38.108（ZTE 管 6.x、CATT 管 9.x、5.x 待定）。</li>
 <li><strong>Release independence（7.6.7，Agreement）</strong>：PC1.5 自 Rel-17；HD-FDD VSAT 自 Rel-19（Ku/Ka）；NTN DL intra-band intra-SAN CA 自 Rel-18。</li>
 </ul>
 <h4 id="2-1-3-hd-fdd-vsat-7-6-4-7-6-5-1-ku-ka-fr2-numerology-wf-r4-2622015">2.1.3 HD-FDD VSAT（7.6.4 / 7.6.5.1，Ku+Ka × FR2 numerology）（WF <code class="tdoc">R4-2622015</code>）</h4>
@@ -297,7 +299,7 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <li><strong>Ku HD-FDD</strong>：Type 7（小天线+GSO）是否支持 → <strong><span class="b-ffs">FFS</span></strong>；Type 8（LEO-only）400 MHz 带宽<strong>不做任何 RF 要求松弛</strong>（Agreement）。</li>
 <li><strong>Ka HD-FDD Type 6</strong>：采用——最小保证 EIRP <strong>68 dBm</strong>、EISREFSENS_50M <strong>−122 dBm</strong>、其余复用 Type 3、on-axis spurious 复用 types 4/5。</li>
 <li><strong>Ka 小天线（Type 8）</strong>：目标 SNR 是否降到 −1dB 以下（如 −6dB）<span class="b-ffs">FFS</span>，<strong>EIS 仍按 −1dB SNR 推导</strong>；卫星参数（GEO/LEO-1200/LEO-600 的 EIRP 密度、G/T）给定起点；天线架构不设限（满足 20×20cm 链路预算即可）；Type 8 的 Tx/Rx 具体数值<strong>全部留待 #121</strong>。</li>
-<li><strong>TR 38.764 分工</strong>：Ku VSAT（Sharp/LG）、Ka VSAT（CSCN/CATT）、Ka 小天线（ZTE）。</li>
+<li><strong>TR 38.764 分工</strong>：6.1 Ku（Sharp，其中 6.1.2 小天线归 LG）、6.2 Ka（CSCN，其中 6.2.1 types 2/3/5/6 归 CATT、6.2.2 小天线归 ZTE）。</li>
 <li>维护侧 3 篇 draft CR（ZTE 杂散、CATT/CSCN 辐射接收、MediaTek 成都 VSAT 类型定义）<strong>均 endorsed</strong>。</li>
 </ul>
 <h4 id="2-1-4-rrm-部分-7-6-5-2-7-6-6-3-wf-r4-2622018">2.1.4 RRM 部分（7.6.5.2 / 7.6.6.3）（WF <code class="tdoc">R4-2622018</code>）</h4>
@@ -310,9 +312,9 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 - <strong>工作计划批准</strong>：Core 至 RAN4#122（2027-01，出 38.101-5/38.133 CR），Perf 部分 #122-bis~#124（2027-08 批 CR）。<br />
 - "<strong>理想预补偿频率</strong>"定义 = 以 UE 可用信息（GNSS/参考位置、星历、显式 FAC）做理想预补偿；<strong>FAC 正确性由网络负责</strong>；UE 不承担超出网络指示的频率调整最小要求。<br />
 - <strong>闭环</strong>：复用 ±0.1ppm/1ms 为起点（相对理想预补偿频率）；FAC 接收-生效延迟归 RRM；T_settle 内行为 <span class="b-ffs">FFS</span>。<br />
-- <strong>开环</strong>：删除 RAN4#120 的 Option 2（Msg2 前不定义需求）；Option 1（不定义）/Option 3（Msg2 后定义）保留待议。</p>
+- <strong>开环</strong>：删除 RAN4#120 的 Option 2（为 Msg2 之前的 UE 发送定义专门需求）；Option 1（不定义专门需求）/Option 3（Msg2 之后定义）保留待议。</p>
 <p><strong>RRM 侧（WF <code class="tdoc">R4-2621828</code>，Thales）：</strong><br />
-- <strong>Scenario 1 为本次唯一焦点</strong>（network assistance/参考位置方案）；Scenario 2（last-known GNSS）<strong>下会开始讨论</strong>（公司分歧：HW/MTK/ZTE/CATT/E/// 推进 vs Samsung/OPPO/QC/Apple 观望）。<br />
+- <strong>Scenario 1 为本次唯一焦点</strong>（network assistance/参考位置方案）；Scenario 2（last-known GNSS）<strong>下会开始讨论</strong>（公司分歧：HW/MTK/ZTE/CATT/E/// 等主张下会即开始、Apple/Thales 同列；Samsung/OPPO 要求先明确"sufficient and valid"、QC 要求先明确 UE 行为）。<br />
 - Scenario 1 需求适用前提 = NGSO + 新 2 序列 PRACH 随机接入（GSO 留 <span class="b-ffs">FFS</span>）。<br />
 - <strong>Te_NTN 重定义</strong>：以网络参考位置（Earth-fixed）或 common TA/Doppler（Earth-moving）为参考，<strong>去掉 UE GNSS 定位误差 margin</strong>；适用于 PRACH 与连接态。<br />
 - 渐变时间调整（Tp_NTN/Tq_NTN）→ 复用性评估；<strong>渐变频率调整不定义</strong>（Scenario 1）；TAC 复用现有 NTN 时延/精度为起点；<strong>RRM 侧不定义 FAC 精度</strong>。<br />
@@ -346,7 +348,7 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <ul>
 <li><strong>TP 批准（<code class="tdoc">R4-2621839</code>，CATT+厦门三安）</strong>：TR 38.763 确立 <strong>Free Space（FS）测试配置为 Ka/Ku 频段 OTA 唯一测试条件</strong>；给出 NTN 频率范围定义（FR1-NTN 410–14500 MHz、FR2-NTN 10700–30000 MHz）与 10GHz 以上频段表（n247/n248 为 FR1-NTN、n508–n512 为 FR2-NTN）。</li>
 <li>相关 LS：<strong>回复 ETSI TC-SES 的 LS 批准</strong>（<code class="tdoc">R4-2621852</code>，与 Eutelsat <code class="tdoc">R4-2621456</code> 合作议题联动）；<strong>GSMA 的"Request to Implement Free Space Testing"LS 收到</strong>（<code class="tdoc">R4-2622210</code>）。</li>
-<li>其余 15 篇（CAICT 离轴 EIRP、Keysight 极化失配/测试可测性、R&amp;S 2-norm 静区指标、Qualcomm 天线指向精度验证等）均 noted，待 TR 继续完善。</li>
+<li>其余 15 篇中 10 篇 noted（CAICT 离轴 EIRP、Keysight 极化失配/测试可测性、R&amp;S 2-norm 静区指标、Qualcomm 天线指向精度验证等）、4 篇 withdrawn（含 CATT 早期 TP 版本 <code class="tdoc">R4-2620039</code>/2621838）、1 篇 revised（<code class="tdoc">R4-2620639</code>）；待 TR 继续完善。</li>
 <li><strong>LTE band 246（5.11.2）</strong>：ZTE 的 TS 36.181 CR（引入 3MHz/5MHz 信道带宽，面向 Region 3 GSO 5G 广播）<strong>endorsed</strong>。</li>
 </ul>
 <h3 id="2-8-6g-ntn-议程-8-fs-6g-radio">2.8 6G NTN（议程 8，<code>FS_6G_Radio</code>）</h3>
@@ -372,11 +374,11 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <h2 id="3-公司态势与争议焦点">3. 公司态势与争议焦点</h2>
 <p><strong>文稿量 Top（NTN 专属议程，联合署名按公司计）</strong>：CATT 30 / Huawei 24 / vivo 20 / ZTE 19 / Ericsson 18 / MediaTek 17 / Thales 16 / Apple 15 / Qualcomm 15 / LGE 13 / Samsung 11 / CHTTL 10 / Sharp 8 / Viasat 8 / OPPO 7 / Nokia 7 / Sony 6 / SpaceX 5；卫星运营商侧（Viasat/SES/AST/Iridium/SpaceX/Eutelsat/JSAT/Globalstar）全面活跃于 VSAT 类型、功率等级与 A-MPR 议题。</p>
 <p><strong>主要争议点（本会实录）</strong>：<br />
-1. <strong>PC1.5 dual Tx 的 ULFPTx 模式范围</strong>：Samsung/Ericsson/CATT 主张"只做 mode 1"，Huawei/Qualcomm 主张保留 mode 2（"不能因为信令可用就定需求"vs"全功率发射是 UE 能力、不必在规范排除"）→ 结论折中为 PC1.5=mode1、PC2 含 mode1,[2],0。<br />
+1. <strong>PC1.5 dual Tx 的 ULFPTx 模式范围</strong>：Samsung/Ericsson/CATT 主张"只做 mode 1"（Samsung："不能因为信令可用就定需求"），Huawei/Qualcomm 主张保留 mode 2（Huawei："全功率发射是 UE 能力、不必在规范排除"）→ 结论折中为 PC1.5=mode1、PC2 含 mode1,[2],0。<br />
 2. <strong>相干 MIMO 要求照搬 TN</strong>：Viasat 明确反对未研究即复制 TN 相干要求到 NTN → WF 保留"各公司分析适用性、下会出结果"。<br />
-3. <strong>Ku Type 7（小天线+GSO）</strong>：Qualcomm/Thales 支持引入，Huawei/ZTE 反对（"Ku FR1 已有"、"链路预算不闭合"）→ <span class="b-ffs">FFS</span>。<br />
-4. <strong>Ka 链路预算的目标 SNR</strong>：Thales/Sharp 主张评估用低 SNR、定值仍按 −1dB；Huawei 要求更强论证 → "低于 −1dB 可行性 <span class="b-ffs">FFS</span>，EIS 按 −1dB"。<br />
-5. <strong>GNSS Scenario 2（last-known 位置）</strong>：Qualcomm/Apple/Samsung 主张等 RAN1 明确"sufficient and valid"再谈；Huawei/MTK/ZTE/CATT/Ericsson/Xiaomi/vivo 主张下会即开始 → 折中"本次聚焦 Scenario 1，下会开始 Scenario 2"。<br />
+3. <strong>Ku Type 7（小天线+GSO）</strong>：Qualcomm/Thales 支持引入，Huawei 称"Ku FR1 已有"不需要、ZTE 指出小天线 GSO 场景 Ku 链路预算不闭合 → <span class="b-ffs">FFS</span>。<br />
+4. <strong>Ka 链路预算的目标 SNR</strong>：Thales 主张评估可用低 SNR、但需求定值仍按 −1dB，Huawei 要求更强论证 → "低于 −1dB 可行性 <span class="b-ffs">FFS</span>，EIS 按 −1dB"。<br />
+5. <strong>GNSS Scenario 2（last-known 位置）</strong>：多数公司（HW/MTK/ZTE/CATT/Ericsson/Xiaomi/vivo/Apple/Thales）主张下会即开始；Samsung/OPPO 要求先明确"sufficient and valid"定义、Qualcomm 要求先明确 UE 行为 → 折中"本次聚焦 Scenario 1，下会开始 Scenario 2"。<br />
 6. <strong>TEI 与 release independence 的规则冲突</strong>：MCC 当场指出 TEI20 特性不能 release-independent（引 <code class="tdoc">RP-260762</code> 先例），CHTTL 以"移动 VSAT 已 RI 到 Rel-19"反驳 → Fixed_VSAT_Ku 的 RI 留 <span class="b-ffs">FFS</span>，<strong>是本次 TEI20 新引入中的一个制度性风险点</strong>。<br />
 7. <strong>MEO 共存研究效率</strong>：Thales 公开质疑讨论低效，与 RAN4 工作量的矛盾显性化 → 该议题被挂起。<br />
 8. <strong>6G NTN 与 TN 的频段/需求和谐化</strong>：总体共识"能合则合"，但 Ku 频段 FR1-NTN/FR2-NTN 双轨并存的整理方向（LGE 主张合并）尚无结论。</p>
@@ -432,7 +434,7 @@ table.wad tr:nth-child(even) td:last-child{background:#e7f0fd}
 <tr>
 <td>7</td>
 <td>日本 2GHz NR-NTN WID</td>
-<td>可能提交 RAN#114 审议</td>
+<td>提交 RAN 全会立项（WID 目标完成 RAN#115）</td>
 <td><strong>"NTN in TN bands"制度先例</strong>，与国内 2.1GHz 议题镜像</td>
 </tr>
 <tr>
